@@ -38,7 +38,17 @@
       <div class="form-container">
         <h1>Add new product</h1>
         <form action="" data-form>
-          <input type="url" class="url" placeholder="Image URL" />
+          <div>
+            <label for="img">Load product image</label>
+            <input
+              type="file"
+              id="img"
+              name="img"
+              placeholder="Image URL"
+              accept=".jpg,.png,.jpeg,.tiff"
+            />
+          </div>
+
           <input type="text" class="category" placeholder="Category" />
           <input type="text" class="name" placeholder="Product name" />
           <input type="text" class="price" placeholder="Price" />

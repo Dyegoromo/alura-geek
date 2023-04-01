@@ -72,6 +72,11 @@ header {
 
 /* ------form------ */
 
+input[type="file"] {
+  border-radius: 10px;
+  background-color: rgb(226, 226, 226);
+}
+
 main {
   width: 100vw;
   height: 70vh;
