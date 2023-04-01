@@ -1,0 +1,239 @@
+@import url(_reset.css);
+@import url(_variables.css);
+
+/* ------general------ */
+
+body {
+  background-color: white !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  margin-top: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  margin-bottom: 10px;
+}
+
+.section,
+section {
+  width: 80%;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.top-section h3 {
+  font-size: 1.5rem;
+  color: var(--dark-gray);
+  font-weight: bold;
+}
+
+.top-section a {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.product-card h4 {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.product-card p {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.product-card a {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+/* ------header------ */
+
+body {
+  background-color: var(--secundary-color);
+  color: var(--dark-gray);
+  font-family: var(--font-family);
+  overflow-x: hidden;
+}
+
+header {
+  background-color: white;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.header-container {
+  width: 100vw;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.search-bar {
+  display: flex;
+  align-self: center;
+  transform: translateX(-200px);
+}
+
+.header-container input {
+  width: 200px;
+  height: 25px;
+  background-color: var(--light-gray);
+  border-radius: 15px;
+}
+
+.header-container input::placeholder {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.fa-magnifying-glass {
+  color: var(--dark-gray);
+  width: 10px;
+  position: relative;
+  right: 23px;
+  transform: translateY(5px);
+  transform: 0%;
+}
+
+.header-container button {
+  color: var(--primary-color);
+  width: 10em;
+  height: 3em;
+  border: 1px solid var(--primary-color);
+}
+
+/* ------banner------ */
+
+.banner-container {
+  width: 100vw;
+}
+
+.img-banner {
+  width: 100vw;
+  height: 60vh;
+  background-image: url("../../The-Super-Mario-Bros-Movie.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.txt-banner {
+  position: absolute;
+  z-index: 99;
+  top: 280px;
+  left: 50px;
+  color: white;
+}
+
+.txt-banner h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.txt-banner p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.txt-banner button {
+  margin-top: 10px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--primary-color);
+}
+
+/* ------bottom section------ */
+
+.contact-footer {
+  width: 100%;
+  height: 300px;
+  background-color: var(--secundary-color);
+}
+
+.container-cierre {
+  display: flex;
+  justify-content: space-around;
+}
+
+.links-cierre-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.links-cierre-section a {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.logo-footer {
+  width: 150px;
+  margin-top: 40px;
+}
+
+.cierre-contacto {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.cierre-contacto input {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.cierre-contacto h4 {
+  font-weight: bold;
+}
+
+.cierre-contacto textarea {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  resize: none;
+}
+
+.cierre-contacto button {
+  margin-top: 10px;
+  width: 150px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+footer {
+  padding: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--dark-gray);
+  text-align: center;
+}

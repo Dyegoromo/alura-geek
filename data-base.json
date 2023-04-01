@@ -1,0 +1,10 @@
+{
+  "card": [
+    {
+      "category": "Star Wars",
+      "url": "assets/img star wars/StarWarsImg1.png",
+      "name": "Product XYZ",
+      "price": "$60.000"
+    }
+  ]
+}
