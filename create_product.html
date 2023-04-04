@@ -37,9 +37,9 @@
     <main>
       <div class="form-container">
         <h1>Add new product</h1>
-        <form action="" data-form>
+        <form data-form>
           <div>
-            <label for="img">Load product image</label>
+            <label for="img">Load product image:</label>
             <input
               type="file"
               id="img"
@@ -48,11 +48,15 @@
               accept=".jpg,.png,.jpeg,.tiff"
             />
           </div>
-
-          <input type="text" class="category" placeholder="Category" />
+          <label for="category">Select the category:</label>
+          <br />
+          <select name="category" class="category">
+            <option value="Star Wars">Star Wars</option>
+            <option value="Consoles" selected>Consoles</option>
+            <option value="Other stuff">Other stuff</option>
+          </select>
           <input type="text" class="name" placeholder="Product name" />
           <input type="text" class="price" placeholder="Price" />
-          <input type="text" class="description" placeholder="Description" />
         </form>
         <button class="btn-add">Add product</button>
       </div>
