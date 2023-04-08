@@ -33,6 +33,14 @@ section {
   height: 40px;
 }
 
+.product-card {
+  display: flex;
+}
+
+.div-card {
+  margin-right: 15px;
+}
+
 .top-section h3 {
   font-size: 1.5rem;
   color: var(--dark-gray);

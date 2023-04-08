@@ -10,35 +10,39 @@ const newCard = (img, name, price) => {
               src='${img}'
               alt="Product image"
             />
-            <h4>'${name}'</h4>
-            <p>'${price}'</p>
+            <h4>${name}</h4>
+            <p>${price}</p>
             <a href="">See product</a>
             
 `;
   $containerCard.innerHTML = cardContent;
-  console.log(
-    "Esta es la img:",
-    img,
-    "Este es el nombre:",
-    name,
-    "Y este es el precio:",
-    price
-  );
+  $containerCard.classList.add("div-card");
 
   return $containerCard;
 };
 
-const $cardSW = d.querySelector("[data-sw]");
+const $cardSW = d.querySelector("[data-sw]"),
+  $carConsoles = d.querySelector("[data-consoles]"),
+  $CatOS = d.querySelector("[data-os]");
 
 productServices
   .dataCards()
   .then((data) => {
-    data.forEach(({ img, name, price }) => {
-      const newProduct = newCard(img, name, price);
-      console.log(newProduct);
-      $cardSW.appendChild(newProduct);
+    data.forEach(({ category, img, name, price }) => {
+      if (category == "Star Wars") {
+        const newProduct = newCard(img, name, price);
+        console.log(newProduct);
+        $cardSW.appendChild(newProduct);
+      }
+      if (category == "Consols") {
+        const newProduct = newCard(img, name, price);
+        console.log(newProduct);
+        $carConsoles.appendChild(newProduct);
+      }
+      if (category == "Other stuff") {
+        const newProduct = newCard(img, name, price);
+        $CatOS.appendChild(newProduct);
+      }
     });
   })
-  .catch((err) => console.log(err));
-
-console.log(newProduct);
+  .catch((err) => console.log("Something went wrong :("));

@@ -1,10 +1,22 @@
 {
   "card": [
     {
-      "category": "Star Wars",
-      "img": "assets/img star wars/StarWarsImg1.png",
-      "name": "Product XYZ",
-      "price": "$60.000"
+      "cat": "Star Wars",
+      "img": "assets/StarWarsImg1.png",
+      "name": "Storm trooper mug",
+      "price": "$40.000"
+    },
+    {
+      "cat": "Consols",
+      "img": "assets/consolas1.png",
+      "name": "Control XYZ",
+      "price": "$120.000"
+    },
+    {
+      "cat": "Other stuff",
+      "img": "assets/Diversos1.png",
+      "name": "Disfraz Pikachu",
+      "price": "$220.000"
     }
   ]
 }

@@ -5,24 +5,19 @@ const $form = d.querySelector("[data-form]");
 
 $form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const img = d.getElementById("img").value,
+
+  const cat = d.querySelector(".category").value,
+    imgFakePath = d.getElementById("img").value,
     name = d.querySelector(".name").value,
     price = d.querySelector(".price").value;
 
-  console.log(img, name, price);
+  const img = `assets/${imgFakePath.slice(12, imgFakePath.lenght)}`;
 
   productServices
-    .createProduct(img, name, price)
-    .then(() => {
-      console.log("Done!");
+    .createProduct(cat, img, name, price)
+    .then((response) => {
+      console.log(response);
+      /* console.log(cat, img, name, price); */
     })
     .catch((err) => console.log(err));
 });
-
-/* ------------------- */
-
-/* 
-$categories = d.querySelector(".category").value,
-$catSW = d.querySelector("[data-sw]".value),
-$carConsoles = d.querySelector("[data-consoles]".value),
-$CatOS = d.querySelector("[data-os]").value; */
