@@ -28,18 +28,18 @@ const $cardSW = d.querySelector("[data-sw]"),
 productServices
   .dataCards()
   .then((data) => {
-    data.forEach(({ category, img, name, price }) => {
-      if (category == "Star Wars") {
+    data.forEach(({ cat, img, name, price }) => {
+      if (cat == "Star Wars") {
         const newProduct = newCard(img, name, price);
         console.log(newProduct);
         $cardSW.appendChild(newProduct);
       }
-      if (category == "Consols") {
+      if (cat == "Consols") {
         const newProduct = newCard(img, name, price);
         console.log(newProduct);
         $carConsoles.appendChild(newProduct);
       }
-      if (category == "Other stuff") {
+      if (cat == "Other stuff") {
         const newProduct = newCard(img, name, price);
         $CatOS.appendChild(newProduct);
       }
