@@ -245,3 +245,23 @@ footer {
   color: var(--dark-gray);
   text-align: center;
 }
+
+/* ---------cards---------- */
+
+.delete {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  padding: 3px;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  font-weight: bolder;
+  background-color: lightcyan;
+  color: var(--primary-color);
+  opacity: 0.85;
+  cursor: pointer;
+  transform: translateX(-12px);
+  margin-top: -9px;
+
+  z-index: 99;
+}

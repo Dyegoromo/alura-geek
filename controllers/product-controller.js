@@ -10,6 +10,7 @@ const newCard = (img, name, price) => {
               src='${img}'
               alt="Product image"
             />
+            <button class="delete">X</button>
             <h4>${name}</h4>
             <p>${price}</p>
             <a href="">See product</a>
@@ -31,12 +32,12 @@ productServices
     data.forEach(({ cat, img, name, price }) => {
       if (cat == "Star Wars") {
         const newProduct = newCard(img, name, price);
-        console.log(newProduct);
+        /* console.log(newProduct); */
         $cardSW.appendChild(newProduct);
       }
       if (cat == "Consols") {
         const newProduct = newCard(img, name, price);
-        console.log(newProduct);
+        /* console.log(newProduct); */
         $carConsoles.appendChild(newProduct);
       }
       if (cat == "Other stuff") {

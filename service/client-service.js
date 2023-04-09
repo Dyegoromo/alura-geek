@@ -7,7 +7,13 @@ const createProduct = (cat, img, name, price) => {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ cat, img, name, price }),
+    body: JSON.stringify({ cat, img, name, price, id: uuid.v4() }),
+  });
+};
+
+const deleteProduct = (id) => {
+  return fetch(`http://localhost:3000/perfil/${id}`, {
+    method: "DELETE",
   });
 };
 

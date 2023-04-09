@@ -4,19 +4,50 @@
       "cat": "Star Wars",
       "img": "assets/StarWarsImg1.png",
       "name": "Storm trooper mug",
-      "price": "$40.000"
+      "price": "$40.000",
+      "code": "S1"
     },
     {
       "cat": "Consols",
       "img": "assets/consolas1.png",
       "name": "Control XYZ",
-      "price": "$120.000"
+      "price": "$120.000",
+      "code": "C1"
     },
     {
       "cat": "Other stuff",
       "img": "assets/Diversos1.png",
-      "name": "Disfraz Pikachu",
-      "price": "$220.000"
+      "name": "Pikachu costume",
+      "price": "$220.000",
+      "code": "OS1"
+    },
+    {
+      "cat": "Consols",
+      "img": "assets/Diversos2.png",
+      "name": "Dual controller",
+      "price": "$60",
+      "id": "fe6add35-5b77-44a2-8af8-6a04459caf8d"
+    },
+    {
+      "cat": "Star Wars",
+      "img": "assets/StarWarsImg3.png",
+      "name": "Baby Yoda",
+      "price": "$55",
+      "id": "8095f2bf-8478-4e16-8a15-2158c8862322"
+    },
+    {
+      "cat": "Other stuff",
+      "img": "assets/Diversos3.png",
+      "name": "VR headset",
+      "price": "$150",
+      "id": "fb051778-7c6f-4fe3-83c7-b1006046b30a"
+    },
+    {
+      "cat": "Star Wars",
+      "img": "assets/StarWarsImg2.png",
+      "name": "Funkos",
+      "price": "$50",
+      "id": "ed29c7b0-aae3-4d85-9665-e254f0f2140f"
     }
   ]
 }
