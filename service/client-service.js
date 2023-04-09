@@ -12,7 +12,7 @@ const createProduct = (cat, img, name, price) => {
 };
 
 const deleteProduct = (id) => {
-  return fetch(`http://localhost:3000/perfil/${id}`, {
+  return fetch(`http://localhost:3000/card/${id}`, {
     method: "DELETE",
   });
 };
@@ -20,4 +20,5 @@ const deleteProduct = (id) => {
 export const productServices = {
   dataCards,
   createProduct,
+  deleteProduct,
 };

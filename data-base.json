@@ -2,34 +2,6 @@
   "card": [
     {
       "cat": "Star Wars",
-      "img": "assets/StarWarsImg1.png",
-      "name": "Storm trooper mug",
-      "price": "$40.000",
-      "code": "S1"
-    },
-    {
-      "cat": "Consols",
-      "img": "assets/consolas1.png",
-      "name": "Control XYZ",
-      "price": "$120.000",
-      "code": "C1"
-    },
-    {
-      "cat": "Other stuff",
-      "img": "assets/Diversos1.png",
-      "name": "Pikachu costume",
-      "price": "$220.000",
-      "code": "OS1"
-    },
-    {
-      "cat": "Consols",
-      "img": "assets/Diversos2.png",
-      "name": "Dual controller",
-      "price": "$60",
-      "id": "fe6add35-5b77-44a2-8af8-6a04459caf8d"
-    },
-    {
-      "cat": "Star Wars",
       "img": "assets/StarWarsImg3.png",
       "name": "Baby Yoda",
       "price": "$55",
@@ -48,6 +20,20 @@
       "name": "Funkos",
       "price": "$50",
       "id": "ed29c7b0-aae3-4d85-9665-e254f0f2140f"
+    },
+    {
+      "cat": "Consols",
+      "img": "assets/consolas3.png",
+      "name": "Family",
+      "price": "$80",
+      "id": "4adc4d47-13b4-4181-854f-0fb440b90f79"
+    },
+    {
+      "cat": "Consols",
+      "img": "assets/consolas2.png",
+      "name": "Play Station One",
+      "price": "$250",
+      "id": "b8cb3cd1-b408-4545-b7d3-82a177b3af64"
     }
   ]
 }
