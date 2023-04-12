@@ -254,14 +254,31 @@ footer {
   position: absolute;
   padding: 3px;
   border-radius: 50%;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: bolder;
   background-color: lightcyan;
   color: var(--primary-color);
   opacity: 0.85;
   cursor: pointer;
-  transform: translateX(-12px);
+  transform: translateX(-17px);
   margin-top: -9px;
 
   z-index: 99;
+}
+
+.edit {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  padding: 3px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: bolder;
+  background-color: lightcyan;
+  color: var(--primary-color);
+  opacity: 0.85;
+  cursor: pointer;
+  transform: translateX(-15px);
+  bottom: 145px;
+  z-index: 69;
 }

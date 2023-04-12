@@ -11,7 +11,8 @@ const newCard = (img, name, price, id) => {
               src='${img}'
               alt="Product image"
             />
-            <button class="delete" id="${id}">X</button>
+            <button class="delete" id="${id}">Delete</button>
+            <button class="edit" id="${id}">Edit</button>
             <h4>${name}</h4>
             <p>${price}</p>
             <a href="">See product</a>
@@ -20,7 +21,12 @@ const newCard = (img, name, price, id) => {
   $containerCard.innerHTML = cardContent;
   $containerCard.classList.add("div-card");
 
-  const btnDelete = $containerCard.querySelector("button");
+  const btnDelete = $containerCard.querySelector("button"),
+    $btnEdit = $containerCard.querySelector(".edit");
+
+  $btnEdit.addEventListener("click", (e) =>
+    window.open(`edit_product.html?id=${id}`)
+  );
 
   btnDelete.addEventListener("click", () => {
     const idBtn = btnDelete.id;

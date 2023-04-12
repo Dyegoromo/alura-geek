@@ -8,20 +8,6 @@
       "id": "8095f2bf-8478-4e16-8a15-2158c8862322"
     },
     {
-      "cat": "Other stuff",
-      "img": "assets/Diversos3.png",
-      "name": "VR headset",
-      "price": "$150",
-      "id": "fb051778-7c6f-4fe3-83c7-b1006046b30a"
-    },
-    {
-      "cat": "Star Wars",
-      "img": "assets/StarWarsImg2.png",
-      "name": "Funkos",
-      "price": "$50",
-      "id": "ed29c7b0-aae3-4d85-9665-e254f0f2140f"
-    },
-    {
       "cat": "Consols",
       "img": "assets/consolas3.png",
       "name": "Family",
@@ -29,11 +15,25 @@
       "id": "4adc4d47-13b4-4181-854f-0fb440b90f79"
     },
     {
-      "cat": "Consols",
-      "img": "assets/consolas2.png",
-      "name": "Play Station One",
-      "price": "$250",
-      "id": "b8cb3cd1-b408-4545-b7d3-82a177b3af64"
+      "cat": "Other stuff",
+      "img": "assets/Diversos1.png",
+      "name": "Pikachu costume",
+      "price": "$125",
+      "id": "41df744a-8b72-458a-ad31-bc7969d9f07e"
+    },
+    {
+      "cat": "Other stuff",
+      "img": "assets/Diversos3.png",
+      "name": "VR Headset",
+      "price": "$60",
+      "id": "0313ef97-1bdd-4294-a7e2-7d68ef73c66d"
+    },
+    {
+      "cat": "Star Wars",
+      "img": "assets/StarWarsImg1.png",
+      "name": "Storm trooper mug",
+      "price": "$30",
+      "id": "6ce22f8b-7bbf-4a41-b3c6-a0ab36e472ea"
     }
   ]
 }

@@ -17,6 +17,7 @@ $form.addEventListener("submit", (e) => {
     .createProduct(cat, img, name, price)
     .then((response) => {
       console.log(response);
+      window.location.href = "./index.html";
       /* console.log(cat, img, name, price); */
     })
     .catch((err) => console.log(err));
