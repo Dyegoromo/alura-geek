@@ -52,20 +52,21 @@ productServices
   .dataCards()
   .then((data) => {
     data.forEach(({ cat, img, name, price, id }) => {
-      if (cat == "Star Wars") {
-        const newProduct = newCard(img, name, price, id);
-        /* console.log(newProduct); */
-        $cardSW.appendChild(newProduct);
-      }
-      if (cat == "Consols") {
-        const newProduct = newCard(img, name, price, id);
-        /* console.log(newProduct); */
-        $carConsoles.appendChild(newProduct);
-      }
-      if (cat == "Other stuff") {
-        const newProduct = newCard(img, name, price, id);
-        $CatOS.appendChild(newProduct);
+      let newProduct = null;
+      switch (cat) {
+        case "Star Wars":
+          newProduct = newCard(img, name, price, id);
+          $cardSW.appendChild(newProduct);
+          break;
+        case "Consols":
+          newProduct = newCard(img, name, price, id);
+          $carConsoles.appendChild(newProduct);
+          break;
+        case "Other stuff":
+          newProduct = newCard(img, name, price, id);
+          $CatOS.appendChild(newProduct);
+          break;
       }
     });
   })
-  .catch((err) => console.log("Something went wrong :("));
+  .catch((err) => console.log(err));
